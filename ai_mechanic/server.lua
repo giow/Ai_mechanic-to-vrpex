@@ -7,14 +7,11 @@ end)
 RegisterServerEvent('esx_gym:vahicle')
 AddEventHandler('esx_gym:vahicle', function()
 	local _source = source
-	local xPlayer = ESX.GetPlayerFromId(_source)
+	local user_id = vRP.getUserId(source)
 	
---	if(xPlayer.getMoney() >= 500) then
---	xPlayer.removeMoney(500)
-	local BankAccount = xPlayer.getAccount('bank').money
-	--xPlayer.setBankBalance
---	if(xPlayer.removeBank() >= 3000) then
-	xPlayer.removeBank(3000)
---	xPlayer.removeAccountMoney('bank', BankAccount)
---	end
+	if vRP.tryFullPayment(user_id, 3000) then
+		vRPclient.notify(source,"~r~Você pagou pelo serviço do mecanico.")
+	else
+		vRPclient.notify(source,"~r~Dinheiro insuficiente.")
+	end 
 end)
