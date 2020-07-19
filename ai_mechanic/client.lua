@@ -5,8 +5,8 @@ RegisterCommand("mecanico", function(source, args)   -- Modify the "mechanic" va
 end, false)
 
 Citizen.CreateThread(function()
-	while ESX == nil do
-		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+	while giow == nil do
+		TriggerEvent('giow:getSharedObject', function(obj) giow = obj end)
 		Citizen.Wait(0)
 	end
 end)
@@ -151,7 +151,7 @@ function LeaveTarget(vehicle, driver)
 end
 
 function removeMoney()
-	TriggerServerEvent('esx_gym:vahicle')
+	TriggerServerEvent('giow_gym:vahicle')
 end
 
 function GetTargetVehicle(player, dir)
