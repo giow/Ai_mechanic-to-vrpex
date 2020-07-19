@@ -15,13 +15,14 @@ flipVehicle = true             -- When enabled, the vehicle will be flipped if o
 
 -- Edit / Add Drivers and their information here!
 
+
 mechPeds = {
                 --  * Find the icons here:      https://wiki.gtanet.work/index.php?title=Notification_Pictures
                 --  * Find the ped models here: https://wiki.gtanet.work/index.php?title=Peds
                 --  * Find the vehicles here    https://wiki.gtanet.work/index.php?title=Vehicle_Models
                 --  * Find the colours here:    https://wiki.gtanet.work/index.php?title=Vehicle_Colors
 
-                [1] = {name = "Mecanico Noah son", icon = "CHAR_MP_MECHANIC", model = "S_M_Y_DockWork_01", vehicle = 'towtruck', colour = 111, 
+                [1] = {name = "Mecanico Giow", icon = "CHAR_MP_MECHANIC", model = "S_M_Y_DockWork_01", vehicle = 'towtruck', colour = 111, 
                                 ['lines'] = {
                                         "Ela é tão boa quanto nova.",
                                         "Tudo feito aqui.",
@@ -36,7 +37,7 @@ mechPeds = {
                                         "Fixo. Tenha um bom dia, dirija com segurança!",
                                         "É um pouco estranho, mas funciona.",}},
 
-                [2] = {name = "Mecanico Noah", icon = "CHAR_MP_BIKER_MECHANIC", model = "S_M_Y_Construct_01", vehicle = 'towtruck', colour = 118, 
+                [2] = {name = "Mecanico Giow", icon = "CHAR_MP_BIKER_MECHANIC", model = "S_M_Y_Construct_01", vehicle = 'towtruck', colour = 118, 
                                 ['lines'] = {
                                         "Agora ela é mais fresca do que um travesseiro com uma hortelã!",
                                         "Tudo feito aqui.",
